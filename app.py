@@ -48,7 +48,6 @@ class Game:
         self.turn = 'A'
 
     def start_game(self):
-        # Set up the board with the correct layout
         self.players['A'] = [
             Pawn('P1', 'A', 0, 0),
             Pawn('P2', 'A', 0, 1),
@@ -81,10 +80,8 @@ class Game:
     def curr_board_state(self):
         return [[None if cell is None else f"{cell.player}-{cell.name}" for cell in row] for row in self.board]
 
-# Initialize the Flask application
 app = Flask(__name__)
 
-# Initialize the game instance
 game_instance = Game()
 
 @app.route('/')
