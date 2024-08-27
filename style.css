@@ -1,14 +1,14 @@
- {
+#board {
     margin: 20px auto;
     width: fit-content;
 }
 
-             {
+#board table {
     border-collapse: collapse;
     width: auto;
 }
 
-           {
+#board td {
     width: 60px; /* Adjust width to fit your design */
     height: 60px; /* Adjust height to fit your design */
     background-color: lightgray;
@@ -18,15 +18,16 @@
     font-size: 14px; /* Adjust font size as needed */
 }
 
-                  {
+#board td.empty {
     background-color: white;
 }
 
-
+/* Optional: Add some style to the table and its cells */
+#board th, #board td {
     padding: 5px;
 }
 
-           {
+#board th {
     background-color: #f0f0f0;
     border: 1px solid #ddd;
 }
