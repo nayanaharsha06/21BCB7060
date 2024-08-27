@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess-like Game</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+    <h1>Chess-like Game</h1>
+    <button id="start-button">Start Game</button>
+    <form id="move-form" style="display: none;">
+        <div>
+            <label for="player">Player</label>
+            <input type="text" id="player" placeholder="Player" required>
+        </div>
+        <div>
+            <label for="figure-name">Figure Name</label>
+            <input type="text" id="figure-name" placeholder="Figure Name" required>
+        </div>
+        <div>
+            <label for="direction">Direction</label>
+            <input type="text" id="direction" placeholder="Direction" required>
+        </div>
+        <button type="submit">Move</button>
+    </form>
+    <div id="board">
+        <table>
+            <tbody>
+                <!-- The JavaScript will fill this in -->
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <script src="static/js/script.js" type="text/javascript"></script>
+    </footer>
+</body>
+</html>
